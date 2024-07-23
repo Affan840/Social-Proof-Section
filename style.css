@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:regular,500,600,700,800,900);
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "League Spartan";
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#container #top {
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+}
+
+#container #top .left {
+  width: 50%;
+  padding-right: 15rem;
+}
+
+#container #top .left h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 3rem;
+  font-weight: 700;
+}
+#container #top .left p {
+  margin-top: 1rem;
+  color: var(--Very-Dark-Magenta);
+  line-height: 1.4;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+#container #top .right {
+  width: 50%;
+}
+
+#container #top .right .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 400px;
+  background-color: var(--Light-Grayish-Magenta);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+#container #top .right .rating .rating-img {
+  display: flex;
+  gap: 0.4rem;
+}
+
+#container #top .right .rating .rating-text h3 {
+  font-size: 1rem;
+  color: var(--Very-Dark-Magenta);
+}
+
+#container #top .right .rating-2nd {
+  margin-left: 2rem;
+}
+#container #top .right .rating-3rd {
+  margin-left: 4rem;
+}
+
+#container #bottom {
+  margin-top: 5rem;
+}
+
+#container #bottom .reviews {
+  display: flex;
+  gap: 2.5rem;
+}
+
+#container #bottom .reviews .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 0.4rem;
+  color: white;
+  padding: 1.4rem 2.1rem;
+  gap: 1.5rem;
+  height: 200px;
+}
+
+#container #bottom .reviews .card .info {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+#container #bottom .reviews .card .info img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+#container #bottom .reviews .card .info .sub h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#container #bottom .reviews .card .info .sub h5:last-of-type {
+  margin-top: 0.4rem;
+  color: var(--Soft-Pink);
+  opacity: 0.7;
+}
+
+#container #bottom .reviews .card .msg p {
+  line-height: 1.3;
+}
+
+#container #bottom .reviews .card-2nd {
+  margin-top: 1rem;
+}
+#container #bottom .reviews .card-3rd {
+  margin-top: 2rem;
+}
+
+@media (max-width: 550px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  #container #top {
+    margin-top: 2rem;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #container #top .left {
+    width: 100%;
+    padding-right: 0;
+  }
+  #container #top .right {
+    width: 100%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container #top .right .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 300px;
+  margin: .7rem 0;
+  padding: 1rem .4rem;
+}
+#container #bottom {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+#container #bottom .reviews{
+    width: 310px;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container #bottom .reviews .card-2nd{
+    margin-top: 0;
+}
+#container #bottom .reviews .card-3rd{
+    margin-top: 0;
+}
+}
